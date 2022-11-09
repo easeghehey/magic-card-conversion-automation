@@ -53,6 +53,10 @@ def map_trigger(trigger):
     if trigger == "dies":
         f_out.write("\t\t\t\tonDeath\n")
     
+    #Zaber. not tested yet
+    #   if trigger =="as long as":
+    #   get next line = 'enchanted' 'artifact'
+    #   f_out.write("lambda eff: eff.source.controller.controls()")
 
 #################################################################
 # main:                                                         #
