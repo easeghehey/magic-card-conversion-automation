@@ -1,5 +1,14 @@
 import re
 
+# Emanuel
+def map_abilities(ability):
+    f_out.write("\n\t\tAbilities:\n")
+
+#Anyone
+def map_targets(target):
+    f_out.write("\n\t\tAbilities:\n")
+
+# Ben
 # map a trigger keyword to write the correct trigger in MTG/triggers.py
 def map_trigger(trigger):
     f_out.write("\n\t\tTriggers:\n")
@@ -68,6 +77,13 @@ if __name__ == "__main__":
         name_match = re.search(r"(.*?)( NAME_END)", line)
         name = name_match.group(1)
         f_out.write(name)
+
+        # extract and map any ability keywords -- work in progress
+        ability_string = "" # look for colors as those usually are followed by an ability + do study of ability cards to determine pattern
+        abilities = re.findall(re.compile(ability_string), line)
+
+        for a in abilities:
+            map_abilities(a)
 
         # extract and map any trigger keywords
         trigger_string = "(you gain life|{0} enters the battlefield|beginning of.*?upkeep|{0} attacks|{0} is dealt combat damage|you draw a card|{0} dies)".format(name)
