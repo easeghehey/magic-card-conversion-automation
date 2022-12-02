@@ -1,0 +1,19 @@
+Check for protection functions
+- Protection: can't have spell used against, and can't be blocked
+- vs. can't be countered
+
+
+
+- make choice example
+##############################
+Preeminent Captain
+
+	# Triggers:
+	# 	onAttack
+	# 		self.controller.... if self.controller.make_choice(
+	# 						"Would you like to %s?" % '...')
+	# 															else None 
+
+
+Card text is different from test_magic text and a lot of the current triggers
+  may not account for that

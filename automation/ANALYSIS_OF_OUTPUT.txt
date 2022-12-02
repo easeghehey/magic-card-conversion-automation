@@ -1,0 +1,13 @@
+Sapling of colfenor TEXT:
+
+Whenever Sapling of Colfenor attacks , reveal the top card of your library . If it's a creature card , you gain life equal to that card's toughness , lose life equal to its power , then put it into your hand.
+---
+CUR OUTPUT ON magic_card_conversions.txt:
+Sapling of Colfenor
+		Triggers:
+				onAttack
+
+		Triggers:
+				onControllerLifeGain
+---
+MUST ONLY HAVE 1 TRIGGER: onAttack. the life gain must not be a trigger

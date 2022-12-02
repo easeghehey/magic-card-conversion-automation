@@ -1,5 +1,11 @@
-# magic-card-conversion-automation
+# automation/
+This folder contains the file `magic_card_converter.py` which is our attempt at automating the conversion of cards so as to follow the format presented in M15.
 
-The function `map_<card characteristic>` takes a parameter <characteristic> and outputs the text with the relevant characteristics onto *magic_card_conversions.txt*
+# everyone's work/
+This folder contains 4 textfiles, which contain the cards that we have converted so far.
 
-The variable(s) `<characteristic>_string` contain the common patterns for a given characteristic. We use those patterns to determine if the text on the card is an ability, trigger, etc. Once that is determined, the code calls on `map_<characteristic>`
+A card may contain **abilities**, **triggers** and **targets** and those are derived from the card's text.
+
+
+# functions-abilities-triggers/
+This folder contains the *abilities*, *triggers*, *colors*, and *functions* found in the python implementation of Magic The Gathering that we are using as reference.
