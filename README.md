@@ -12,6 +12,11 @@ The cards follow the format of:
 - Triggers
   - effects or targets which call also call on existing functions within the python MTG game.
 
+# card-text-search-ben/
+Ben has created a script that uses a massive csv file (contains lots of cards with their text) to find key words in cards which use to associate with triggers, abilities and effects.
+
+### How to use
+Replace the input in the `str.contains` call with your desired text and run the jupyter notebook file.
 
 # functions-abilities-triggers/
 This folder contains the *abilities*, *triggers*, *colors*, and *functions* found in the python implementation of Magic The Gathering that we are using as reference.
